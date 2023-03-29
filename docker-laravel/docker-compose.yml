@@ -17,12 +17,12 @@ services:
         target: /root/.config/psysh
         volume:
           nocopy: true
-    environment:
-      - APP_DEBUG=${APP_DEBUG:-true}
-      - APP_ENV=${APP_ENV:-local}
-      - APP_URL=${APP_URL:-http://localhost}
-      - LOG_CHANNEL=${LOG_CHANNEL:-stderr}
-      - LOG_STDERR_FORMATTER=${LOG_STDERR_FORMATTER:-Monolog\Formatter\JsonFormatter}
+#    environment:
+#      - APP_DEBUG=${APP_DEBUG:-true}
+#      - APP_ENV=${APP_ENV:-local}
+#      - APP_URL=${APP_URL:-http://localhost}
+#      - LOG_CHANNEL=${LOG_CHANNEL:-stderr}
+#      - LOG_STDERR_FORMATTER=${LOG_STDERR_FORMATTER:-Monolog\Formatter\JsonFormatter}
 #      - DB_CONNECTION=${DB_CONNECTION:-sqlite}
 #      - DB_HOST=${DB_HOST:-db}
 #      - DB_PORT=${DB_PORT:-3306}
