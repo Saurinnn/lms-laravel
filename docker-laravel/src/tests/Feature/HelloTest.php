@@ -7,8 +7,9 @@ use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 use App\Models\User;
 use App\Models\Person;
-//use DatabaseMigrations;
 use Illuminate\Foundation\Testing\WithoutMiddleware;
+use Database\Seeders\OrderStatusSeeder;
+use Database\Seeders\TransactionStatusSeeder;
 //use Illuminate\Foundation\Testing\DatabaseMigrations;
 //use Illuminate\Foundation\Testing\DatabaseTransactions;
 
@@ -26,8 +27,11 @@ class HelloTest extends TestCase
 
         $response->assertStatus(200);
     }*/
-
     public function testHello(){
+        $person = Person::factory()->create();
+        // DatabaseSeederを実行
+         $this->seed();
+
         /*$this->assertTrue(true);
 
         $response = $this->get('/');
